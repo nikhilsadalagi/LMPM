@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><entities>
+	<entity>
+		<entity-name>cz.lpmp.jba.entity.AppUser</entity-name>
+		<entity-width>120</entity-width>
+		<entity-height>30</entity-height>
+		<entity-X-Coordinate>341</entity-X-Coordinate>
+		<entity-Y-Coordinate>207</entity-Y-Coordinate>
+		<primary-collapsed>false</primary-collapsed>
+		<relation-collapsed>false</relation-collapsed>
+		<basic-collapsed>false</basic-collapsed>
+	</entity>
+
+	<entity>
+		<entity-name>cz.lpmp.jba.entity.Comments</entity-name>
+		<entity-width>120</entity-width>
+		<entity-height>30</entity-height>
+		<entity-X-Coordinate>614</entity-X-Coordinate>
+		<entity-Y-Coordinate>138</entity-Y-Coordinate>
+		<primary-collapsed>false</primary-collapsed>
+		<relation-collapsed>false</relation-collapsed>
+		<basic-collapsed>false</basic-collapsed>
+	</entity>
+
+	<entity>
+		<entity-name>cz.lpmp.jba.entity.Media</entity-name>
+		<entity-width>120</entity-width>
+		<entity-height>30</entity-height>
+		<entity-X-Coordinate>341</entity-X-Coordinate>
+		<entity-Y-Coordinate>40</entity-Y-Coordinate>
+		<primary-collapsed>false</primary-collapsed>
+		<relation-collapsed>false</relation-collapsed>
+		<basic-collapsed>false</basic-collapsed>
+	</entity>
+
+	<entity>
+		<entity-name>cz.lpmp.jba.entity.Post</entity-name>
+		<entity-width>120</entity-width>
+		<entity-height>30</entity-height>
+		<entity-X-Coordinate>90</entity-X-Coordinate>
+		<entity-Y-Coordinate>138</entity-Y-Coordinate>
+		<primary-collapsed>false</primary-collapsed>
+		<relation-collapsed>false</relation-collapsed>
+		<basic-collapsed>false</basic-collapsed>
+	</entity>
+
+	<entity>
+		<entity-name>cz.lpmp.jba.entity.Role</entity-name>
+		<entity-width>120</entity-width>
+		<entity-height>30</entity-height>
+		<entity-X-Coordinate>341</entity-X-Coordinate>
+		<entity-Y-Coordinate>300</entity-Y-Coordinate>
+		<primary-collapsed>false</primary-collapsed>
+		<relation-collapsed>false</relation-collapsed>
+		<basic-collapsed>false</basic-collapsed>
+	</entity>
+</entities>

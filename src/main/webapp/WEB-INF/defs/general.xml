@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+<tiles-definitions>
+  <definition name="common" template="/WEB-INF/layout/classic.jsp">
+    <put-attribute name="footer" value="/WEB-INF/layout/footer.jsp" />
+  </definition>
+  <definition name="index" extends="common">
+    <put-attribute name="title" value="Study material" />
+    <put-attribute name="body" value="/WEB-INF/jsp/index.jsp" />
+    <put-attribute name="current" value="index" />
+  </definition>  
+  
+    <definition name="users" extends="common">
+    <put-attribute name="title" value="Users" />
+    <put-attribute name="body" value="/WEB-INF/jsp/users.jsp" />
+    <put-attribute name="current" value="users" />
+  </definition>
+  
+    <definition name="userdetail" extends="common">
+    <put-attribute name="title" value="User Detail" />
+    <put-attribute name="body" value="/WEB-INF/jsp/userdetail.jsp" />
+    <put-attribute name="current" value="usersdetail" />
+  </definition>
+
+    <definition name="user-register" extends="common">
+    <put-attribute name="title" value="User Registration" />
+    <put-attribute name="body" value="/WEB-INF/jsp/user-register.jsp" />
+    <put-attribute name="current" value="register" />
+  </definition>    
+  
+  <definition name="list" extends="common">
+    <put-attribute name="title" value="list" />
+    <put-attribute name="body" value="/WEB-INF/jsp/list.jsp" />
+    <put-attribute name="current" value="list" />
+  </definition>
+
+    <definition name="login" extends="common">
+    <put-attribute name="title" value="Login" />
+    <put-attribute name="body" value="/WEB-INF/jsp/login.jsp" />
+    <put-attribute name="current" value="login" />
+  </definition>
+
+    <definition name="upload" extends="common">
+    <put-attribute name="title" value="Upload" />
+    <put-attribute name="body" value="/WEB-INF/jsp/upload.jsp" />
+    <put-attribute name="current" value="upload" />
+  </definition>
+
+    <definition name="account" extends="common">
+    <put-attribute name="title" value="Account" />
+    <put-attribute name="body" value="/WEB-INF/jsp/account.jsp" />
+    <put-attribute name="current" value="account" />
+  </definition>
+
+    <definition name="check" extends="common">
+    <put-attribute name="title" value="check" />
+    <put-attribute name="body" value="/WEB-INF/jsp/accout.jsp" />
+    <put-attribute name="current" value="check" />
+  </definition>
+
+
+    <definition name="allsub" extends="common">
+    <put-attribute name="title" value="All Subjects" />
+    <put-attribute name="body" value="/WEB-INF/jsp/allsub.jsp" />
+    <put-attribute name="current" value="allsub" />
+  </definition>
+
+    <definition name="subscribed" extends="common">
+    <put-attribute name="title" value="Subscribed" />
+    <put-attribute name="body" value="/WEB-INF/jsp/subscribed.jsp" />
+    <put-attribute name="current" value="subscribed" />
+  </definition>
+
+  </tiles-definitions> 

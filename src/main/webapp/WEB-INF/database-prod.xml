@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+<!-- <bean class="java.net.URI" id="dbUrl">
+    <constructor-arg value="${DATABASE_URL}"/>
+</bean>
+
+<bean class="org.apache.commons.dbcp.BasicDataSource" destroy-method="close" id="dataSource">
+    <property name="driverClassName" value="${database.driverClassName}"/>
+    <property name="url" value="#{ 'jdbc:postgresql://' + @dbUrl.getHost() + ':' + @dbUrl.getPort() + @dbUrl.getPath() }"/>
+    <property name="username" value="#{ @dbUrl.getUserInfo().split(':')[0] }"/>
+    <property name="password" value="#{ @dbUrl.getUserInfo().split(':')[1] }"/>
+</bean> -->
+
+<bean class="org.apache.commons.dbcp.BasicDataSource" destroy-method="close" id="dataSource">
+    <property name="driverClassName" value="org.postgresql.Driver"/>
+    <property name="url" value="jdbc:postgresql://localhost:5432/LPMPDatabase"/>
+    <property name="username" value="postgres"/>
+    <property name="password" value="postgres"/>
+</bean>
+
+<bean class="org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean" id="emf">
+
+	<property name="packagesToScan" value="cz.lpmp.jba.entity" />
+	<property name="dataSource" ref="dataSource" />
+	<property name="jpaProperties">
+		<props>
+			<prop key="hibernate.hbm2ddl.auto">update</prop>
+			<prop key="hibernate.show_sql">false</prop>
+		</props>
+	</property>
+	<property name="persistenceProvider">
+	<bean class="org.hibernate.jpa.HibernatePersistenceProvider" />
+	</property>
+</bean>
+</beans>
